@@ -26,13 +26,13 @@
   padding: 3px;
 }
 
-.bookmark {
+.bookmark-btn {
   display: flex;
   border-bottom-color: #00254d;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-radius: 0.8rem;
-  padding: 3px;
+  padding: 9px;
   padding-bottom: 7px;
   margin-bottom: 7px;
 }

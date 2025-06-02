@@ -2,15 +2,17 @@
     "name": "My YT Bookmarks",
     "version": "0.1.0",
     "description": "Saving timestamps in YT videos",
-    "permissions": ["storage", "tabs"],
-    "host_permissions": ["https://*.youtube.com/*"],
+    "permissions": ["storage", "tabs","activeTab", "scripting"],
+    "host_permissions": ["https://*.youtube.com/*","https://googleads.g.doubleclick.net/*"], 
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
         "matches": ["https://*.youtube.com/*"],
-        "js": ["contentScript.js"]
+        "js": ["contentScript.js"],
+        "run_at": "document_idle"
+           
       }
     ],
     "web_accessible_resources": [
